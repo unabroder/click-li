@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loding</title>
+    <style>
+        .loading-container {
+            position: absolute;
+            left: calc(50% - 25%);
+            top: 30%;
+        }
+        
+        #loading-icon {
+            position: absolute;
+            top: 30px;
+            width: 50px;
+            height: 50px;
+            border-radius: 20px;
+            background-color: black;
+            animation: 1s loading-animation linear infinite;
+        }
+        
+        @keyframes loading-animation {
+            0% {
+                transform: rotate(0deg);
+                background-color: red;
+            }
+            50% {
+                transform: rotate(360deg);
+                background-color: red;
+            }
+            0% {
+                transform: rotate(720deg);
+                background-color: red;
+            }
+        }
+    </style>
+    <script src="app.js"></script>
+</head>
+
+<body>
+
+    <div class="loading-container">
+        loading
+        <div id="loading-icon"></div>
+    </div>
+    <!--button id="boton" onclick="setup()">prueba</button-->
+
+    <div class="new">
+        <ul id="listas" class="menu">
+            <li id="li1" class="lista">A</li>
+            <li class="lista">B</li>
+            <li class="lista">C</li>
+        </ul>
+        <button class="button" onclick="sort()">Cambiar orden</button>
+    </div>
+</body>
+
+</html>

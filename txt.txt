@@ -1,0 +1,13 @@
+your company's website does a lot of heavy server-side processing, which users often have to wait for. as such, its important that users have a loading indicator that indicates that the websites is waiting for a response.
+complete the cascade style sheep animation named loading-animation so tat it meets the following requirements:
+the icon color should start as red, and have no rotation (0 degrees).
+halfway through the animation, the icon color should be orange and should have completed an entire rotation (360 degrees).
+at the end of animation, the icon color should return to red, and should have completed another entire rotation (720 degrees).
+write a wrap function that takes the execute function as an argument and returns a modified function so that the following requirements are met:
+any result returned by the function execute should be returned from the modified function unchanged.
+if the function execute throws an error, the modified function should return null.
+after the function execute has thrown an error, its future executions should be prevented and null should be returned.
+multiple wrapped functions can coexist.
+the execute function doesn't take any arguments.
+complete the setup function implementation, which moves the clicked element to first place in the list.
+for example, if item B is clicked in the list below, the list should be reordered, resulting in the following order B, A and C.
